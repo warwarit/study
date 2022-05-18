@@ -23,9 +23,10 @@ def is_phone_nuber(text):
 # print('Moshi moshi - this is phon number:')
 # print(is_phone_nuber('Moshi moshi'))
 
-massage = 'Call me tomorrow on number 415-555-1011. 415-555-9999 - this is number my office'
+message = 'Call me tommorow on number 415-555-1011, 415-555-9999 - this is number of my offece'
 
 for i in range(len(message)):
-    chunk = massage[i:i+12]
+    chunk = message[i:i+12]
     if is_phone_nuber(chunk):
-        print('Found phone nubmer:')
+        print(f'Found phone nubmer: {chunk}')
+print('Finish')
